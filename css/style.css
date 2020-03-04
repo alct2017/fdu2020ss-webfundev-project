@@ -1,29 +1,8 @@
-#LatestComment{
-    font-style: italic;
-    color: red;background-image: url("/img/travel-images/normal/medium/222222.jpg");
+#bottom-link {
+    text-align: center;
 }
-time{
-    font-size: 60%;
-}
-a:link{
-    text-decoration: underline;
-    color: blue;
-}
-a:visited{
-    text-decoration: underline;
-    color: purple;
-}
-a:hover{
-    text-decoration: none;
-    font-weight: bold;
-
-}
-a:active{
-    background-color: yellow;
-}
-figure{
-    border: solid 6pt;
-    border-color: black lightskyblue brown cadetblue;
-    margin: 30px;
-    padding: 100px;
+#bottom-info {
+    text-align: right;
+    font-size: 80%;
+    color: gray;
 }
