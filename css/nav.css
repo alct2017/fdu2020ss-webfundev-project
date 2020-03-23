@@ -1,12 +1,10 @@
+@import url(reset.css);
 nav{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 41px;
-}
-nav ul{
-    list-style-type: none;
 }
 nav a{
     text-decoration: unset;
