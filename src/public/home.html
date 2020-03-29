@@ -3,29 +3,31 @@
 
 <head>
     <title>Travel Fudan</title>
-    <style>
-        @import url(../../css/reset.css);
-        @import url(../../css/nav.css);
-    </style>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="item left current"><a href="../public/home.html">Home</a></li>
-            <li class="item left"><a href="../public/explore.html">Explore</a></li>
-            <li class="item left"><a href="../public/search.html">Search</a></li>
-            <li class="item right dropdown">
-                <summary>My account</summary>
-                <ul id="account-dropdown-content" class="dropdown-content">
-                    <li><a href="../private/upload.html">Upload</a></li>
-                    <li><a href="../private/mypicture.html">My Picture</a></li>
-                    <li><a href="../private/myfavorites.html">My Favorites</a></li>
-                    <li><a href="../other/signin.html">Sign in</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul id="nav-left">
+                <li class="item current"><a href="../public/home.html">Home</a></li>
+                <li class="item"><a href="../public/explore.html">Explore</a></li>
+                <li class="item"><a href="../public/search.html">Search</a></li>
+            </ul>
+            <ul id="nav-right">
+                <li class="item dropdown">
+                    <span>My account</span>
+                    <ul class="dropdown-content">
+                        <li class="item"><a href="../private/upload.html">Upload</a></li>
+                        <li class="item"><a href="../private/mypicture.html">My Picture</a></li>
+                        <li class="item"><a href="../private/myfavorites.html">My Favorites</a></li>
+                        <li class="item"><a href="../other/signin.html">Sign in</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
