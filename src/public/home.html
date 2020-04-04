@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/home-main.css">
     <link rel="stylesheet" href="../../css/home-section.css">
+    <link rel="stylesheet" href="../../css/aside.css">
+    <link rel="stylesheet" href="../../css/footer.css">
 </head>
 
 <body>
@@ -15,17 +17,17 @@
         <nav>
             <ul id="nav-left">
                 <li class="item current"><a href="../public/home.html">Home</a></li>
-                <li class="item"><a href="../public/explore.html">Explore</a></li>
+                <li class="item"><a href="../public/browse.html">Browse</a></li>
                 <li class="item"><a href="../public/search.html">Search</a></li>
             </ul>
             <ul id="nav-right">
                 <li class="item dropdown">
                     <span>My account</span>
                     <ul class="dropdown-content">
-                        <li class="item"><a href="../private/upload.html">Upload</a></li>
-                        <li class="item"><a href="../private/mypicture.html">My Picture</a></li>
-                        <li class="item"><a href="../private/myfavorites.html">My Favorites</a></li>
-                        <li class="item"><a href="../other/signin.html">Sign in</a></li>
+                        <li class="item"><a href="../private/upload.html"><img src="../../img/svg/upload.svg">Upload</a></li>
+                        <li class="item"><a href="../private/mypicture.html"><img src="../../img/svg/image.svg">My Picture</a></li>
+                        <li class="item"><a href="../private/myfavorites.html"><img src="../../img/svg/like.svg">My Favorites</a></li>
+                        <li class="item"><a href="../other/signin.html"><img src="../../img/svg/user.svg">Sign in</a></li>
                     </ul>
                 </li>
             </ul>
@@ -266,11 +268,33 @@
         </div>
     </section>
     <aside>
-        <button onclick="alert">alert</button>
-        <button onclick="top">top</button>
+        <button id="refresh" onclick="alert('Refreshed')"><img src="../../img/svg/refresh.svg"></button>
+        <button id="up_to_top"><a href="#nav-left"><img src="../../img/svg/up_to_top.svg"></a></button>
     </aside>
     <footer>
-
+        <div class="footer-content">
+            <ul class="col">
+                <li class="item"><a href="#">Terms</a></li>
+                <li class="item"><a href="#">Privacy</a></li>
+                <li class="item"><a href="#">Help</a></li>
+            </ul>
+            <ul class="col">
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="col">
+                <li class="item"><a href="#"><img src="../../img/svg/alipay.svg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="../../img/svg/social_github.svg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="../../img/svg/social_stackflow.svg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="../../img/svg/social_wechat.svg" alt=""></a></li>
+            </ul>
+            <ul class="col">
+                <li><img src="../../img/Wechat2DCode.JPG" width="150px" height="150px"></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            &copy; 2020 JLiu. All Rights Reserved.
+        </div>
     </footer>
 </body>
 

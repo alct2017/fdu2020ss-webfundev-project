@@ -36,7 +36,8 @@ nav .item>a {
     color: unset;
 }
 
-nav .item:hover {
+nav .item:hover {    
+    transition-duration: 0.4s;
     color: black;
     background-color: #95b6d7;
 }
@@ -57,6 +58,7 @@ nav .dropdown-content {
 
 nav .dropdown:hover>.dropdown-content,
 nav .dropdown-content:hover {
+    transition-duration: 0.4s;
     display: block;
     position: absolute;
     z-index: 1;
@@ -70,10 +72,16 @@ nav .dropdown-content:hover {
 
 nav .dropdown-content>.item {
     margin: 0 2px;
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px solid gray;
 }
 
 nav .dropdown-content>.item:last-child {
     border-bottom: none;
+}
+
+nav .dropdown-content>.item img{
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: bottom;
 }
