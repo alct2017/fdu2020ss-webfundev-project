@@ -190,6 +190,7 @@ body {
 .ptoto-item-container-horizontal {
     display: flex;
     flex-flow: row nowrap;
+    overflow: hidden;
 }
 
 .ptoto-item-container-vertical {
@@ -206,6 +207,7 @@ body {
 .ptoto-item-container-horizontal .photo-container {
     width: 450px;
     padding-bottom: 300px;
+    flex: 0 1 auto;
 }
 
 .ptoto-item-container-vertical .photo-container {
@@ -223,6 +225,7 @@ body {
 
 .ptoto-item-container-horizontal .photo-info {
     padding: 10px 30px;
+    flex: 1 5 auto;
 }
 
 .ptoto-item-container-horizontal .photo-info .title {
@@ -269,6 +272,7 @@ body {
 .ptoto-item-container-horizontal .photo-info .operation {
     padding: 20px 0;
     display: flex;
+    flex-flow: row wrap;
 }
 
 .ptoto-item-container-vertical .photo-info .title {
