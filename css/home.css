@@ -66,3 +66,10 @@ aside button img {
     width: 34px;
     height: 34px;
 }
+.footer-container {
+    background-color: #333333;
+    color: #ffffff;
+}
+.footer-container a:hover{
+    color: #b4a0ff;
+}

@@ -5,26 +5,22 @@
     <title>Sign in</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/public.css">
-    <link rel="stylesheet" href="../../css/signin.css">
 </head>
 
 <body>
-    <h1>Sign in</h1>
-    <div class="container-l0-colflex responsive">
-        <div class="container-l1 sign-box">
-            <form class="form-container" method="POST" action="../public/home.html">
-                <label class="form-lable" for="user-name">Username</label>
-                <input class="text" type="text" name="user-name">
-                <label class="form-lable" for="user-pwd">Password</label>
-                <input class="text" type="password" name="user-pwd">
-                <button class="from-button" type="submit">Sign in</button>
-            </form>
-        </div>
-        <div id="signup-box">
-            New to FDU?<a href="signup.html">Create an account.</a>
-        </div>
+    <div class="container-l0-colflex sign-container">
+        <header class="sign-header">Sign in</header>
+        <form class="sign-content form-container" method="POST" action="../public/home.html">
+            <label class="form-lable" for="user-name">Username</label>
+            <input class="form-text" type="text" name="user-name" required>
+            <label class="form-lable" for="user-pwd">Password</label>
+            <input class="form-text" type="password" name="user-pwd" required>
+            <button class="button form-button" type="submit">Sign in</button>
+        </form>
+        <footer class="sign-footer">
+            New to FDU? <a href="signup.html">Create an account.</a>
+            <footer>
     </div>
-    <footer></footer>
 </body>
 
 </html>

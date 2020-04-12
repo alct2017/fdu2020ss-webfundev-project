@@ -3,23 +3,24 @@
 
 <head>
     <title>Sign up</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/public.css">
 </head>
 
 <body>
-    <h1>Sign up</h1>
-    <div id="signup-box">
-        <form method="POST" action="/src/other/signin.html">
-            <p><label for="username">Username</label>
-                <input type="text" name="username"></p>
-            <p><label for="email">Email address</label>
-                <input type="email" name="email"></p>
-            <p><label for="pwd">Password</label>
-                <input type="password" name="pwd"></p>
-            <p><label for="pwd-confirm">Confirm your password</label>
-                <input type="password" name="pwd-confirm"></p>
-            <p><input type="submit" value="Sign up"></p>
+    <div class="sign-container">
+        <header class="sign-header">Sigh up</header>
+        <form class="sign-content form-container" method="POST" action="signin.html">
+            <label class="form-lable" for="username">Username</label>
+            <input class="form-text" required type="text" name="username">
+            <label class="form-lable" for="email">Email address</label>
+            <input class="form-text" required type="email" name="email">
+            <label class="form-lable" for="pwd">Password</label>
+            <input class="form-text" required type="password" name="pwd">
+            <label class="form-lable" for="pwd-confirm">Confirm your password</label>
+            <input class="form-text" required type="password" name="pwd-confirm">
+            <button class="button form-button" type="submit">Sign up</button>
         </form>
-    </div>
 </body>
 
 </html>

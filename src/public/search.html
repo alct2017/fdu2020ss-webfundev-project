@@ -5,7 +5,6 @@
     <title>Search</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/public.css">
-    <link rel="stylesheet" href="../../css/search.css">
 </head>
 
 <body>
@@ -37,17 +36,17 @@
         <div class="search container-l1">
             <div class="title">Search</div>
             <form class="search form-container container-l2" action="#" method="get">
-                <div class="search-by">
+                <div class="search-by form-lable">
                     <input type="radio" name="search-by" id="">
-                    <label class="form-lable" for="by-title">Search by Title</label>
+                    <label class="" for="by-title">Search by Title</label>
+                </div>
+                <input type="text" name="by-title" id="" class="form-text">
+                <div class="search-by form-lable">
+                    <input type="radio" name="search-by" id="">
+                    <label class="" for="by-description">Search by Description</label>
                 </div>
                 <textarea class="form-textarea" name="" id="" cols="30" rows="10"></textarea>
-                <div class="search-by">
-                    <input type="radio" name="search-by" id="">
-                    <label class="form-lable" for="by-description">Search by Description</label>
-                </div>
-                <textarea class="form-textarea" name="" id="" cols="30" rows="10"></textarea>
-                <button class="from-button" type="submit" onclick="alert('Searched')">Filter</button>
+                <button class="button form-button" type="submit" onclick="alert('Searched')">Filter</button>
             </form>
         </div>
         <div class="result container-l1">

@@ -1,73 +1,51 @@
-.warpper {
-    width: 1000px;
-    min-width: 60%;
-    max-width: 100%;
-    margin: auto;
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.warpper aside {
+aside {
     flex: 0 0 auto;
     width: 200px;
 }
 
-.warpper main {
+main {
     flex: auto;
 }
 
-.warpper a {
-    text-decoration: none;
-    color: unset;
-}
-
-.warpper .container-l1 {
-    border: 1px solid #d1d5da;
-    border-radius: 2px;
-    margin: 20px 10px;
-}
-
-.warpper .container-l1 .title {
-    padding: 10px;
-    border-bottom: 1px solid #d1d5da;
-    background-color: #f6f8fa;
-}
-
-.warpper .container-l2 {
-    border-bottom: 1px solid #d1d5da;
-    padding: 7px 10px;
-}
-
-.warpper .container-l2:last-of-type {
-    border-bottom: none;
-}
-
-.warpper .search.form {
+.search.form {
     position: relative;
 }
 
-.warpper .search.form input {
+.search.form input {
+    position: relative;
     height: 32px;
-    width: auto;
+    box-sizing: border-box;
+    width: 100%;
     border: 0;
-    padding: 0;
+    padding-left: 30px;
 }
 
-.warpper .search.form button {
+.search.form button {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     height: 32px;
-    width: 60px;
+    width: 32px;
     border: 0;
     padding: 0;
-    border-left: 1px solid #d1d5da;
+    background-color: transparent;
 }
-
+.filterbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-content: stretch;
+    padding-top: 0;
+}
+.filterbar>*{
+    margin: 7px 10px 0 0;
+    height: 30px;
+    width: 124px;
+}
 .filter .content-box {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content:start;
     padding: 7px;
 }
 
@@ -79,23 +57,6 @@
     padding-bottom: 200px;
 }
 
-.photo-container img {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.filter .pagination {
-    margin: auto;
-}
-
-.filter .pagination ul {
-    display: flex;
-    justify-content: center;
-}
-
-.filter .pagination li {
-    margin: 0 12px 10px;
+.container-l2 a:hover {
+    color: rgb(112, 112, 112)
 }

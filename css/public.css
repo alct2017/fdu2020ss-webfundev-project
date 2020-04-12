@@ -1,6 +1,8 @@
 /* public font */
 body {
-    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #f5f5f5;
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: 400;
 }
 
 /* public function */
@@ -13,7 +15,7 @@ body {
 
 /* public nav */
 .nav-container {
-    background-color: #0e69af;
+    background-color: #2c2c32;
 }
 
 .nav {
@@ -37,18 +39,18 @@ body {
 .nav .item {
     font-weight: 100;
     padding: 16px 20px;
-    color: rgb(153, 145, 145);
+    color: #ababad;
 }
 
 .nav .item:hover {
     transition-duration: 0.4s;
-    color: black;
-    background-color: #95b6d7;
+    color: #ffffff;
+    background-color: #525257;
 }
 
 .nav .item.current {
-    color: gray;
-    background-color: #9ab9d8;
+    color: #999999;
+    background-color: #3d3d42;
 }
 
 .nav .dropdown {
@@ -71,13 +73,17 @@ body {
     right: -1px;
     border: 1px solid #6f6f6f;
     border-radius: 2px;
-    background-color: #9ab9d8;
+    background-color: #f2f2f2;
 }
 
 .nav .dropdown-content .item {
-    margin: 0 2px;
     padding: 10px 0;
+    color: #000000;
     border-bottom: 1px solid gray;
+}
+
+.nav .dropdown-content .item:hover {
+    background-color: #e3e3e3;
 }
 
 .nav .dropdown-content .item:last-child {
@@ -106,6 +112,15 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, 20px);
+}
+
+.footer-multicol .footer-icon-col .icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.footer-multicol .footer-icon-col .icon:hover {
+    background-color: #b4a0ff;
 }
 
 .footer-multicol .footer-icon-col {
@@ -140,27 +155,35 @@ body {
 }
 
 .container-l1 {
-    border: 1px solid #d1d5da;
+    background-color: #fff;
+    border: #dedede solid 1px;
     border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     margin: 20px 10px 0;
 }
 
-.container-l1:last-of-type {
+.container-l1:last-child {
     margin-bottom: 20px;
 }
 
 .container-l1>.title {
     padding: 10px;
-    border-bottom: 1px solid #d1d5da;
+    border-bottom: 2px solid #d1d5da;
     background-color: #f6f8fa;
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .container-l2 {
     border-bottom: 1px solid #d1d5da;
     padding: 7px 10px;
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.container-l2:last-of-type {
+.container-l2:last-child {
     border-bottom: none;
 }
 
@@ -208,9 +231,16 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    line-height: 5em;
+    line-height: 3em;
 }
+.ptoto-item-container-horizontal .photo-info .author {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
+    line-height: 2em;
+}
 .ptoto-item-container-horizontal .photo-info:hover .title {}
 
 .ptoto-item-container-horizontal .photo-info .brief {
@@ -275,44 +305,98 @@ body {
     margin: 0 12px 10px;
 }
 
+.button {
+    margin-right: 30px;
+    margin-top: 10px;
+    width: 134px;
+    height: 50px;
+    background: #0066b8;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.center-button {
+    display: block;
+    margin: 10px auto 0;
+    width: 134px;
+    height: 50px;
+    background: #0066b8;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #005ba4;
+}
+
 .form-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
 }
 
-.form-lable {}
+.form-lable {
+    margin-top: 10px;
+}
 
-.form-text {}
+.form-text {
+    height: 24px;
+}
 
 .form-textarea {
+    height: 10em;
     resize: none;
 }
 
-.from-button {}
+.form-button {
+    background-color: #2ebc4f;
+}
+.form-button:hover{
+    background-color: #28a745;
+}
 
-.sign-box {
+.sign-container {
+    width: 300px;
+    margin: auto;
+}
+
+.sign-header {
+    font-weight: bold;
+    font-size: 3em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sign-content {
     width: 300px;
     height: auto;
     margin: auto;
-    padding: 10px 5px;
+    padding: 0 5px;
     border: 1px solid gray;
     border-radius: 3px;
 }
 
-.button {
-    margin-right: 30px;
-    width: 170px;
-    height: 40px;
-    border-width: 0px;
-    border-radius: 3px;
-    background: #1E90FF;
-    cursor: pointer;
-    outline: none;
-    color: white;
-    font-size: 17px;
+.sign-content .button {
+    margin: 10px 0;
+    width: unset;
 }
 
-.button:hover {
-    background: #5599FF;
+.sign-footer {
+    font-size: 0.9em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sign-footer a {
+    color: #5599FF;
+}
+
+.sign-footer a:hover {
+    color: #0e69af;
 }

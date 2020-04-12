@@ -2,10 +2,12 @@
 <html>
 
 <head>
+    <title>Browse</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/public.css">
     <link rel="stylesheet" href="../../css/browse.css">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="../../jQuery/browse-select.js"></script>
 </head>
 
 <body>
@@ -39,7 +41,8 @@
                 <div class="title">Search by Title</div>
                 <form class="search form" action="#" method="get">
                     <input type="text" name="search">
-                    <button type="submit" onclick="alert('Searched')"><img src="../../img/svg/search.svg" alt=""></button>
+                    <button type="submit" onclick="alert('Searched')"><img src="../../img/svg/search.svg" alt=""
+                            width="26px" height="26px"></button>
                 </form>
             </div>
             <div class="hotcountry container-l1">
@@ -70,35 +73,54 @@
         <main class="container-l0-colflex">
             <div class="filter container-l1">
                 <div class="title">Filter</div>
-                <div class="filterbar container-l2">
-                    <form action="#" method="get">
-                        <select name="content" id="">
-                            <option value="0" selected hidden>Filter by Content</option>
-                            <option value="1">People</option>
-                            <option value="2">Animal</option>
-                            <option value="3">Building</option>
-                            <option value="4">Wonder</option>
-                            <option value="5">Scenery</option>
-                        </select>
-                        <select name="country" id="">
-                            <option value="0" selected hidden>Filter by Country</option>
-                            <option value="1">China</option>
-                            <option value="2">Italy</option>
-                            <option value="3">Japan</option>
-                            <option value="4">America</option>
-                        </select>
-                        <select name="city" id="">
-                            <option value="0" selected hidden>Filter by City</option>
-                            <option value="1">Shanghai</option>
-                            <option value="2">Wuhan</option>
-                            <option value="3">LA</option>
-                            <option value="4">Paris</option>
-                            <option value="5">New York</option>
-                        </select>
-                        <button type="submit" onclick="alert('Filtered')">Filter</button>
-                    </form>
-                </div>
-                <div class="content-box">
+                <form class="filterbar container-l2" action="#" method="get">
+                    <select name="content" id="">
+                        <option value="0" selected hidden>Filter by Content</option>
+                        <option value="1">People</option>
+                        <option value="2">Animal</option>
+                        <option value="3">Building</option>
+                        <option value="4">Wonder</option>
+                        <option value="5">Scenery</option>
+                    </select>
+                    <select name="country" id="country">
+                        <option value="0" selected hidden>Filter by Country</option>
+                        <option value="1">China</option>
+                        <option value="2">Japan</option>
+                        <option value="3">Italy</option>
+                        <option value="4">America</option>
+                    </select>
+                    <select name="city" id="" class="city">
+                        <option value="0" selected hidden>Filter by City</option>
+                    </select>
+                    <select name="city" id="" class="city" hidden="hidden">
+                        <option value="0" selected hidden>Filter by City</option>
+                        <option value="1">Shanghai</option>
+                        <option value="2">Kunming</option>
+                        <option value="3">Beijing</option>
+                        <option value="4">Yantai</option>
+                    </select>
+                    <select name="city" id="" class="city" hidden="hidden">
+                        <option value="0" selected hidden>Filter by City</option>
+                        <option value="1">Tokyo</option>
+                        <option value="2">Osaka</option>
+                        <option value="3">Kamakura</option>
+                    </select>
+                    <select name="city" id="" class="city" hidden="hidden">
+                        <option value="0" selected hidden>Filter by City</option>
+                        <option value="1">Roma</option>
+                        <option value="2">Milan</option>
+                        <option value="3">Venice</option>
+                        <option value="4">Florence</option>
+                    </select>
+                    <select name="city" id="" class="city" hidden="hidden">
+                        <option value="0" selected hidden>Filter by City</option>
+                        <option value="1">New York</option>
+                        <option value="2">San Francisco</option>
+                        <option value="3">Washington</option>
+                    </select>
+                    <button class="button form-button" type="submit" onclick="alert('Filtered')">Filter</button>
+                </form>
+                <div class="content-box container-l2">
                     <a href="../other/detail.html">
                         <div class="photo-container">
                             <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
@@ -159,17 +181,17 @@
                             <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
                         </div>
                     </a>
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <li><a href="#">&lt;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&gt;</a></li>
-                    </ul>
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="#">&lt;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&gt;</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>

@@ -1,8 +1,15 @@
-.upload.form {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: stretch;
+#photo-container {
+    position: relative;
+    width: 640px;
+    min-width: 60%;
+    max-width: 100%;
+    height: 360px;
+    margin: auto;
+    background-color: gray;
 }
-.upload.form textarea {
-    resize: none;
+#photo-preview {
+    object-fit: scale-down;
+}
+#fileupload{
+    margin: auto;
 }
