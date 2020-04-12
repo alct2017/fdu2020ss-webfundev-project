@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/browse.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="nav responsive">
+            <ul class="nav-left">
+                <li class="item"><a href="../public/home.html">Home</a></li>
+                <li class="item current"><a href="../public/browse.html">Browse</a></li>
+                <li class="item"><a href="../public/search.html">Search</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="item dropdown">
+                    <span>My account</span>
+                    <ul class="dropdown-content">
+                        <li class="item"><a href="../private/upload.html"><img src="../../img/svg/upload.svg">Upload</a>
+                        </li>
+                        <li class="item"><a href="../private/mypicture.html"><img src="../../img/svg/image.svg">My
+                                Picture</a></li>
+                        <li class="item"><a href="../private/myfavorites.html"><img src="../../img/svg/like.svg">My
+                                Favorites</a></li>
+                        <li class="item"><a href="../other/signin.html"><img src="../../img/svg/user.svg">Sign in</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-l0-rowflex responsive">
+        <aside class="container-l0-colflex">
+            <div class="search container-l1">
+                <div class="title">Search by Title</div>
+                <form class="search form" action="#" method="get">
+                    <input type="text" name="search">
+                    <button type="submit" onclick="alert('Searched')"><img src="../../img/svg/search.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="hotcountry container-l1">
+                <div class="title">Hot Country</div>
+                <div class="content-box">
+                    <ul>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">China</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">Japan</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">American</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">Italy</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">England</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hotcity container-l1">
+                <div class="title">Hot City</div>
+                <div class="content-box">
+                    <ul>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">Shanghai</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">Wuhan</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">LA</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">Paris</a></li>
+                        <li class="container-l2"><a href="#" onclick="alert('The Result Shown')">New York</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="container-l0-colflex">
+            <div class="filter container-l1">
+                <div class="title">Filter</div>
+                <div class="filterbar container-l2">
+                    <form action="#" method="get">
+                        <select name="content" id="">
+                            <option value="0" selected hidden>Filter by Content</option>
+                            <option value="1">People</option>
+                            <option value="2">Animal</option>
+                            <option value="3">Building</option>
+                            <option value="4">Wonder</option>
+                            <option value="5">Scenery</option>
+                        </select>
+                        <select name="country" id="">
+                            <option value="0" selected hidden>Filter by Country</option>
+                            <option value="1">China</option>
+                            <option value="2">Italy</option>
+                            <option value="3">Japan</option>
+                            <option value="4">America</option>
+                        </select>
+                        <select name="city" id="">
+                            <option value="0" selected hidden>Filter by City</option>
+                            <option value="1">Shanghai</option>
+                            <option value="2">Wuhan</option>
+                            <option value="3">LA</option>
+                            <option value="4">Paris</option>
+                            <option value="5">New York</option>
+                        </select>
+                        <button type="submit" onclick="alert('Filtered')">Filter</button>
+                    </form>
+                </div>
+                <div class="content-box">
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="../other/detail.html">
+                        <div class="photo-container">
+                            <img src="../../img/travel-images/normal/medium/5855774224.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">&lt;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="footer-container">
+        <footer class="footer-brief"></footer>
+    </div>
+</body>
+
+</html>

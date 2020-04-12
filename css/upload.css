@@ -1,0 +1,8 @@
+.upload.form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+}
+.upload.form textarea {
+    resize: none;
+}

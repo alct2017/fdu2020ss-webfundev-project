@@ -1,0 +1,318 @@
+/* public font */
+body {
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* public function */
+.responsive {
+    width: 1000px;
+    min-width: 60%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* public nav */
+.nav-container {
+    background-color: #0e69af;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav .nav-left {
+    display: inline-flex;
+    flex: 3;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.nav .nav-right {
+    display: inline-flex;
+    flex: 2;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.nav .item {
+    font-weight: 100;
+    padding: 16px 20px;
+    color: rgb(153, 145, 145);
+}
+
+.nav .item:hover {
+    transition-duration: 0.4s;
+    color: black;
+    background-color: #95b6d7;
+}
+
+.nav .item.current {
+    color: gray;
+    background-color: #9ab9d8;
+}
+
+.nav .dropdown {
+    position: relative;
+    margin-right: 1px;
+}
+
+.nav .dropdown-content {
+    display: none;
+}
+
+.nav .dropdown:hover .dropdown-content,
+.nav .dropdown .dropdown-content:hover {
+    transition-duration: 0.4s;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    width: 100%;
+    right: -1px;
+    border: 1px solid #6f6f6f;
+    border-radius: 2px;
+    background-color: #9ab9d8;
+}
+
+.nav .dropdown-content .item {
+    margin: 0 2px;
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+}
+
+.nav .dropdown-content .item:last-child {
+    border-bottom: none;
+}
+
+.nav .dropdown-content .item img {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: bottom;
+}
+
+/* public footer */
+.footer-container {
+    margin-top: 30px;
+}
+
+.footer-multicol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 10px 0;
+}
+
+.footer-multicol .footer-item-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 20px);
+}
+
+.footer-multicol .footer-icon-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-rows: repeat(auto-fill, 50px);
+}
+
+.footer-multicol .footer-icon-col img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-brief {
+    text-align: center;
+    font: 12px lighter;
+}
+
+.footer-brief::after {
+    content: "\00A9\ 2020 Alct. All Right Reserved.";
+}
+
+/* public components */
+.container-l0-rowflex {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.container-l0-colflex {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.container-l1 {
+    border: 1px solid #d1d5da;
+    border-radius: 2px;
+    margin: 20px 10px 0;
+}
+
+.container-l1:last-of-type {
+    margin-bottom: 20px;
+}
+
+.container-l1>.title {
+    padding: 10px;
+    border-bottom: 1px solid #d1d5da;
+    background-color: #f6f8fa;
+}
+
+.container-l2 {
+    border-bottom: 1px solid #d1d5da;
+    padding: 7px 10px;
+}
+
+.container-l2:last-of-type {
+    border-bottom: none;
+}
+
+.ptoto-item-container-horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.ptoto-item-container-vertical {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.photo-container {
+    display: block;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ptoto-item-container-horizontal .photo-container {
+    width: 450px;
+    padding-bottom: 300px;
+}
+
+.ptoto-item-container-vertical .photo-container {
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.photo-container img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ptoto-item-container-horizontal .photo-info {
+    padding: 10px 30px;
+}
+
+.ptoto-item-container-horizontal .photo-info .title {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    line-height: 5em;
+}
+
+.ptoto-item-container-horizontal .photo-info:hover .title {}
+
+.ptoto-item-container-horizontal .photo-info .brief {
+    /* -webkit-line-clamp */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    line-height: 3em;
+}
+
+.ptoto-item-container-horizontal .photo-info:hover .brief {}
+
+.ptoto-item-container-horizontal .photo-info .info {
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.ptoto-item-container-horizontal .photo-info .operation {
+    padding: 20px 0;
+    display: flex;
+}
+
+.ptoto-item-container-vertical .photo-info .title {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.2em 0.5em;
+}
+
+.ptoto-item-container-vertical .photo-info .brief {
+    /* -webkit-line-clamp */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.pagination {
+    margin: auto;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 12px 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+}
+
+.form-lable {}
+
+.form-text {}
+
+.form-textarea {
+    resize: none;
+}
+
+.from-button {}
+
+.sign-box {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 10px 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.button {
+    margin-right: 30px;
+    width: 170px;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 3px;
+    background: #1E90FF;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+
+.button:hover {
+    background: #5599FF;
+}

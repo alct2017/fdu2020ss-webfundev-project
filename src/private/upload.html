@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/upload.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="nav responsive">
+            <ul class="nav-left">
+                <li class="item"><a href="../public/home.html">Home</a></li>
+                <li class="item"><a href="../public/browse.html">Browse</a></li>
+                <li class="item"><a href="../public/search.html">Search</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="item dropdown">
+                    <span>My account</span>
+                    <ul class="dropdown-content">
+                        <li class="item"><a href="../private/upload.html"><img src="../../img/svg/upload.svg">Upload</a>
+                        </li>
+                        <li class="item"><a href="../private/mypicture.html"><img src="../../img/svg/image.svg">My
+                                Picture</a></li>
+                        <li class="item"><a href="../private/myfavorites.html"><img src="../../img/svg/like.svg">My
+                                Favorites</a></li>
+                        <li class="item"><a href="../other/signin.html"><img src="../../img/svg/user.svg">Sign in</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-l0-colflex responsive">
+        <div class="upload container-l1">
+            <div class="title">Upload</div>
+            <form class="upload form container-l2" action="mypicture.html" method="POST">
+                <input type="file" name="" id="">
+                <button type="button" onclick="alert('Uploaded')">Upload</button>
+                <label for="Title">Title</label>
+                <textarea name="Title" id="" cols="30" rows="10"></textarea>
+                <label for="Description">Description</label>
+                <textarea name="Description" id="" cols="30" rows="10"></textarea>
+                <label for="Country">Country</label>
+                <textarea name="Country" id="" cols="30" rows="10"></textarea>
+                <label for="City">City</label>
+                <textarea name="City" id="" cols="30" rows="10"></textarea>
+                <button type="submit" onclick="alert('Submitted')">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-container">
+        <footer class="footer-brief"></footer>
+    </div>
+</body>
+
+</html>

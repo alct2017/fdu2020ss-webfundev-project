@@ -3,27 +3,26 @@
 
 <head>
     <title>Sign in</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/signin.css">
 </head>
 
 <body>
     <h1>Sign in</h1>
-    <div id="signin-box">
-        <form method="POST" action="/src/public/home.html">
-            <p>
-                <label for="user-name">Username</label>
-                <input type="text" name="user-name">
-            </p>
-            <p>
-                <label for="user-pwd">Password</label>
-                <input type="password" name="user-pwd">
-            </p>
-            <p>
-                <input type="submit" value="Sign in">
-            </p>
-        </form>
-    </div>
-    <div id="signup-box">
-        New to FDU?<a href="signup.html">Create an account.</a>
+    <div class="container-l0-colflex responsive">
+        <div class="container-l1 sign-box">
+            <form class="form-container" method="POST" action="../public/home.html">
+                <label class="form-lable" for="user-name">Username</label>
+                <input class="text" type="text" name="user-name">
+                <label class="form-lable" for="user-pwd">Password</label>
+                <input class="text" type="password" name="user-pwd">
+                <button class="from-button" type="submit">Sign in</button>
+            </form>
+        </div>
+        <div id="signup-box">
+            New to FDU?<a href="signup.html">Create an account.</a>
+        </div>
     </div>
     <footer></footer>
 </body>
